@@ -1,6 +1,10 @@
 name               = "mirrors"
 main               = "src/index.ts"
 compatibility_date = "2024-07-25"
+routes = [
+  { pattern = "github.samuka007.com", custom_domain = true },
+  { pattern = "docker.samuka007.com", custom_domain = true }
+]
 
 # # For local development, use `wrangler dev` to start a local server
 # [dev]
@@ -34,8 +38,3 @@ VERSION = "2.1.0"
 SERVICE_NAME = "cf-worker-mirrors"
 DOMAINS = ["samuka007.com"]
 FORBID_HTML = true
-
-routes = [
-  { pattern = "github.samuka007.com", custom_domain = true },
-  { pattern = "docker.samuka007.com", custom_domain = true }
-]
